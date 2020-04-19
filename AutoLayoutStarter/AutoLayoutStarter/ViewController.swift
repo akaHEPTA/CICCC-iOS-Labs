@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         bStackView.axis = .vertical
         bStackView.distribution = .equalSpacing
         
+        let anchor1 = UIView()
+        anchor1.translatesAutoresizingMaskIntoConstraints = false
+        anchor1.heightAnchor.constraint(equalToConstant: 0).isActive = true
+        bStackView.addArrangedSubview(anchor1)
+        
         let bBoxView1 = UIView.init(frame: CGRect.zero)
         bBoxView1.translatesAutoresizingMaskIntoConstraints = false
         bBoxView1.backgroundColor = .blue
@@ -57,6 +62,11 @@ class ViewController: UIViewController {
             bBoxView3.heightAnchor.constraint(equalToConstant: 70)
         ])
         bStackView.addArrangedSubview(bBoxView3)
+        
+        let anchor2 = UIView()
+        anchor2.translatesAutoresizingMaskIntoConstraints = false
+        anchor2.heightAnchor.constraint(equalToConstant: 0).isActive = true
+        bStackView.addArrangedSubview(anchor2)
         
         return bStackView
     }()
@@ -150,7 +160,7 @@ class ViewController: UIViewController {
         mainView.addSubview(blueBoxesView)
         NSLayoutConstraint.activate([
             blueBoxesView.widthAnchor.constraint(equalToConstant: 70),
-            blueBoxesView.heightAnchor.constraint(equalTo: mainView.heightAnchor, multiplier: 0.66),
+            blueBoxesView.heightAnchor.constraint(equalTo: mainView.heightAnchor),
             blueBoxesView.centerXAnchor.constraint(equalTo: mainView.centerXAnchor),
             blueBoxesView.centerYAnchor.constraint(equalTo: mainView.centerYAnchor)
         ])
