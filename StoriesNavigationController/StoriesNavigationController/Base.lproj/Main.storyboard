@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xC7-Wy-9IG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Doorway-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_door" translatesAutoresizingMaskIntoConstraints="NO" id="HII-Jd-7Jc">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxA-gM-gdh">
+                                <rect key="frame" x="169" y="683" width="76" height="30"/>
+                                <state key="normal" title="Coat Room"/>
+                                <connections>
+                                    <segue destination="uGm-Xz-7GB" kind="show" id="0ao-Mn-St3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PxA-gM-gdh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="YIY-Oc-hUh"/>
+                            <constraint firstItem="PxA-gM-gdh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="anR-Fi-kwF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Doorway" id="SfO-ft-Okd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="137.94642857142856"/>
+        </scene>
+        <!--Coat room-->
+        <scene sceneID="Sp8-BS-Ac6">
+            <objects>
+                <viewController id="uGm-Xz-7GB" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1z2-xh-V1v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coat_room" translatesAutoresizingMaskIntoConstraints="NO" id="giM-nX-XXJ">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pol-CQ-6Lk">
+                                <rect key="frame" x="163.5" y="633" width="87" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRs-8s-FRn">
+                                        <rect key="frame" x="19.5" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="Library"/>
+                                        <connections>
+                                            <segue destination="vPK-vT-hWA" kind="show" id="XlY-pe-KNl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYb-1f-biu">
+                                        <rect key="frame" x="0.0" y="50" width="87" height="30"/>
+                                        <state key="normal" title="Dining Room"/>
+                                        <connections>
+                                            <segue destination="dLa-ul-ccc" kind="show" id="SIn-Ff-Qbp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF4-a9-flu">
+                                        <rect key="frame" x="13" y="100" width="61" height="30"/>
+                                        <state key="normal" title="Stairs up"/>
+                                        <connections>
+                                            <segue destination="CAb-01-Wwu" kind="show" id="eal-0f-d0V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pol-CQ-6Lk" firstAttribute="centerX" secondItem="1z2-xh-V1v" secondAttribute="centerX" id="Kvt-Ls-D5v"/>
+                            <constraint firstItem="pol-CQ-6Lk" firstAttribute="centerY" secondItem="1z2-xh-V1v" secondAttribute="centerY" constant="250" id="mLd-Sz-1qa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="an9-7p-FFs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coat room" largeTitleDisplayMode="never" id="Ch7-yY-f2x">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="PkF-qN-f7t">
+                            <connections>
+                                <action selector="doorwayButtonTapped:" destination="uGm-Xz-7GB" id="Emf-Ze-mtg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Biv-ta-LDF" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="Phi-L0-Gww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fA-Rn-68q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Biv-ta-LDF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="811.60714285714278"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="Zfq-kF-uPU">
+            <objects>
+                <viewController id="vPK-vT-hWA" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5qG-SM-tLX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" image="library" translatesAutoresizingMaskIntoConstraints="NO" id="WeL-xT-vpz">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qey-cT-rBV">
+                                <rect key="frame" x="154" y="683" width="106" height="30"/>
+                                <state key="normal" title="Secret passage"/>
+                                <connections>
+                                    <segue destination="NcE-fc-clZ" kind="show" id="uQr-NN-hvy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qey-cT-rBV" firstAttribute="centerY" secondItem="5qG-SM-tLX" secondAttribute="centerY" constant="250" id="ObK-pn-Xpu"/>
+                            <constraint firstItem="qey-cT-rBV" firstAttribute="centerX" secondItem="5qG-SM-tLX" secondAttribute="centerX" id="gY7-8s-V5H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sFO-0K-Hs3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Library" id="XvM-dR-eQc">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="d5X-Ke-oMn"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="9rr-Fh-T5j" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="QMx-XO-zvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRQ-RP-ubO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9rr-Fh-T5j" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1515"/>
+        </scene>
+        <!--Secret passage-->
+        <scene sceneID="md7-Y8-Ahk">
+            <objects>
+                <viewController id="NcE-fc-clZ" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v89-pe-wrB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="uWI-xA-lD6">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WCB-4w-lMM">
+                                <rect key="frame" x="153.5" y="633" width="107" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfy-D1-p49">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Dungeon"/>
+                                        <connections>
+                                            <segue destination="TBe-Pn-cvR" kind="show" id="ZiH-px-8Jn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj8-1K-Gde">
+                                        <rect key="frame" x="0.0" y="50" width="107" height="30"/>
+                                        <state key="normal" title="Laboratory"/>
+                                        <connections>
+                                            <segue destination="38O-1L-413" kind="show" id="b6m-gq-yUG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFX-Rq-jSS">
+                                        <rect key="frame" x="0.0" y="100" width="107" height="30"/>
+                                        <state key="normal" title="Mysterious lake"/>
+                                        <connections>
+                                            <segue destination="9D2-Iw-t7g" kind="show" id="2Wp-e1-cRL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WCB-4w-lMM" firstAttribute="centerX" secondItem="v89-pe-wrB" secondAttribute="centerX" id="49O-Vc-Fyw"/>
+                            <constraint firstItem="WCB-4w-lMM" firstAttribute="centerY" secondItem="v89-pe-wrB" secondAttribute="centerY" constant="250" id="Rgp-iT-tzO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7DY-Zc-eBy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Secret passage" id="cHF-af-MYz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="QMt-1j-rZy"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="a6u-2Q-bf0" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="kgK-71-LMZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZT-MA-yR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="a6u-2Q-bf0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="2214"/>
+        </scene>
+        <!--Dungeon-->
+        <scene sceneID="nt9-wz-z0a">
+            <objects>
+                <viewController id="TBe-Pn-cvR" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="daw-Qa-0ER">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="zU0-vJ-4aO">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8Sn-19-aSF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dungeon" id="it6-jS-cNP">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="RNs-aH-12P"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="ee3-33-QjE" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="sdP-4h-Znt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wju-8v-uAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ee3-33-QjE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1370" y="2912"/>
+        </scene>
+        <!--Laboratory-->
+        <scene sceneID="Qzz-tA-HeA">
+            <objects>
+                <viewController id="38O-1L-413" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EWR-qW-f0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0j-xy-Mno">
+                                <rect key="frame" x="172.5" y="683" width="69" height="30"/>
+                                <state key="normal" title="Generator"/>
+                                <connections>
+                                    <segue destination="D6c-c4-IAD" kind="show" id="dac-YY-jdR"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="5Tl-A3-ASC">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F0j-xy-Mno" firstAttribute="centerX" secondItem="EWR-qW-f0h" secondAttribute="centerX" id="Qp7-bo-WkU"/>
+                            <constraint firstItem="F0j-xy-Mno" firstAttribute="centerY" secondItem="EWR-qW-f0h" secondAttribute="centerY" constant="250" id="acN-QE-KIN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bDG-uI-KYt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Laboratory" id="Nxc-vA-OvJ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="veu-Of-dFK"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="SFG-HR-IAc" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="2bh-RN-LqV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zQx-mD-c7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SFG-HR-IAc" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="2912"/>
+        </scene>
+        <!--Generator-->
+        <scene sceneID="GZp-T8-Fci">
+            <objects>
+                <viewController id="D6c-c4-IAD" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hdP-Cc-eeC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="generator" translatesAutoresizingMaskIntoConstraints="NO" id="4TN-ll-KMo">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="D5E-rd-f2K"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Generator" id="6ce-z5-YdJ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ECr-Pc-tVd"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="zCw-sY-1ai" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="bEq-5G-bgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sjx-r5-Ktg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zCw-sY-1ai" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="3605"/>
+        </scene>
+        <!--Mysterious lake-->
+        <scene sceneID="d0c-rv-noL">
+            <objects>
+                <viewController id="9D2-Iw-t7g" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w6F-c5-L7n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmO-mH-a8G">
+                                <rect key="frame" x="156" y="683" width="102" height="30"/>
+                                <state key="normal" title="Cursed chalice"/>
+                                <connections>
+                                    <segue destination="UxW-E4-QmZ" kind="show" id="k5n-dp-xFT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mysterious_lake" translatesAutoresizingMaskIntoConstraints="NO" id="Ham-CC-cNE">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dmO-mH-a8G" firstAttribute="centerY" secondItem="w6F-c5-L7n" secondAttribute="centerY" constant="250" id="msk-UB-IYp"/>
+                            <constraint firstItem="dmO-mH-a8G" firstAttribute="centerX" secondItem="w6F-c5-L7n" secondAttribute="centerX" id="tst-se-6uv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CuI-5T-Meo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mysterious lake" id="9ME-PT-eSh">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="61o-xq-Jqg"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="SP8-08-h9C" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="PVc-9b-Eqz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aza-Sz-lOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SP8-08-h9C" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="2912"/>
+        </scene>
+        <!--Cursed chalice-->
+        <scene sceneID="4eM-mf-Huf">
+            <objects>
+                <viewController id="UxW-E4-QmZ" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRG-oO-Tkf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cursed_chalice" translatesAutoresizingMaskIntoConstraints="NO" id="bAB-Qw-8OX">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EAf-Hw-Hp9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cursed chalice" id="lEX-Q7-Fuo">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="FDj-cw-LuW"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="onf-Mh-KA3" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="O6r-L2-v00"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoV-7m-h3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="onf-Mh-KA3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="3605"/>
+        </scene>
+        <!--Dining room-->
+        <scene sceneID="a2x-8A-jpM">
+            <objects>
+                <viewController id="dLa-ul-ccc" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsu-gH-IAC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-xC-M0t">
+                                <rect key="frame" x="181" y="683" width="52" height="30"/>
+                                <state key="normal" title="Kitchen"/>
+                                <connections>
+                                    <segue destination="DU1-oB-g3R" kind="show" id="1yD-2B-mUY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-Dv-ydG">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7ee-xC-M0t" firstAttribute="centerX" secondItem="hsu-gH-IAC" secondAttribute="centerX" id="TLU-xc-ZKP"/>
+                            <constraint firstItem="7ee-xC-M0t" firstAttribute="centerY" secondItem="hsu-gH-IAC" secondAttribute="centerY" constant="250" id="XTx-mW-8dE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hef-Vy-9dY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dining room" id="B6E-ax-ALQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="50S-Ia-psr"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="a0j-lG-8mr" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="i2E-WM-r9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKC-ge-KwQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="a0j-lG-8mr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="1516"/>
+        </scene>
+        <!--Kitchen-->
+        <scene sceneID="jgO-Cd-YE2">
+            <objects>
+                <viewController id="DU1-oB-g3R" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hwp-d7-Xs5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uo-7a-OjD">
+                                <rect key="frame" x="168" y="683" width="78" height="30"/>
+                                <state key="normal" title="Back porch"/>
+                                <connections>
+                                    <segue destination="Ta3-sh-YVe" kind="show" id="91E-C7-5U4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="crN-dj-6l5">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Uo-7a-OjD" firstAttribute="centerY" secondItem="Hwp-d7-Xs5" secondAttribute="centerY" constant="250" id="DSE-88-9hm"/>
+                            <constraint firstItem="5Uo-7a-OjD" firstAttribute="centerX" secondItem="Hwp-d7-Xs5" secondAttribute="centerX" id="QIi-gS-55M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V6A-83-YWc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kitchen" id="NfF-ix-z8w">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Q9d-tS-SCl"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="u6m-P2-uD2" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="fLw-8U-sYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPf-mp-1pw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="u6m-P2-uD2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="2214"/>
+        </scene>
+        <!--Back porch-->
+        <scene sceneID="rWn-wE-uir">
+            <objects>
+                <viewController id="Ta3-sh-YVe" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0KR-Nk-fwf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back_porch" translatesAutoresizingMaskIntoConstraints="NO" id="XIP-IO-6Id">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tqa-25-oxb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Back porch" id="Soc-Yh-P3y">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="4Tu-Lp-f4A"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="wqd-sl-vPZ" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="O7K-TJ-Uvj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddi-q6-HjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wqd-sl-vPZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="2912"/>
+        </scene>
+        <!--Stairs up-->
+        <scene sceneID="cgC-e4-pif">
+            <objects>
+                <viewController id="CAb-01-Wwu" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OiO-fS-AeW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stairs_up" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-3Z-0fe">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m7K-Oa-dhF">
+                                <rect key="frame" x="173.5" y="658" width="67" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRW-Jm-itA">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                        <state key="normal" title="Bedroom"/>
+                                        <connections>
+                                            <segue destination="tri-x0-SpH" kind="show" id="1w8-8U-QeI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM0-vC-1ut">
+                                        <rect key="frame" x="0.0" y="50" width="67" height="30"/>
+                                        <state key="normal" title="Bathroom"/>
+                                        <connections>
+                                            <segue destination="pcD-Gm-fEU" kind="show" id="0I8-5V-iV8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m7K-Oa-dhF" firstAttribute="centerX" secondItem="OiO-fS-AeW" secondAttribute="centerX" id="wLY-1N-9vF"/>
+                            <constraint firstItem="m7K-Oa-dhF" firstAttribute="centerY" secondItem="OiO-fS-AeW" secondAttribute="centerY" constant="250" id="zO8-7W-Vqr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lRi-D4-Iaq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stairs up" id="BLX-kJ-PSc">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="GA5-7Y-uic"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="0w7-87-ISH" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="qCj-3c-cno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKP-ra-rh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0w7-87-ISH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="1515"/>
+        </scene>
+        <!--Bedroom-->
+        <scene sceneID="74U-Yn-fGR">
+            <objects>
+                <viewController id="tri-x0-SpH" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uGc-On-ifO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="jVH-J6-iix">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gXS-H1-yKU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bedroom" id="F8h-DH-SP0">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="hYw-SI-Sdi"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="RdJ-lZ-wjr" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="hro-ta-Djf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2D-VJ-pNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RdJ-lZ-wjr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="2214"/>
+        </scene>
+        <!--Bathroom-->
+        <scene sceneID="REu-2m-Yeu">
+            <objects>
+                <viewController id="pcD-Gm-fEU" customClass="SubViewController" customModule="StoriesNavigationController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hwb-xz-lYg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="qHH-b7-k6k">
+                                <rect key="frame" x="20" y="140" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f20-r0-Jvp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bathroom" id="ppa-es-4WY">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="7yJ-zy-zoL"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="1sK-p4-nCf" kind="unwind" identifier="unwindToDoorway" unwindAction="unwindToDoorwayWithUnwindSegue:" id="tkd-5e-d38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pk-3P-sjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1sK-p4-nCf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2354" y="2214"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hjh-hT-wNt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xC7-Wy-9IG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="sHY-dn-nhD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JMz-aQ-aMd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzh-Hh-aoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_porch" width="1024" height="1024"/>
+        <image name="bathroom" width="1024" height="1024"/>
+        <image name="bedroom" width="1024" height="1024"/>
+        <image name="coat_room" width="1024" height="1024"/>
+        <image name="cursed_chalice" width="1024" height="1024"/>
+        <image name="dining_room" width="1024" height="1024"/>
+        <image name="dungeon" width="1024" height="1024"/>
+        <image name="front_door" width="1024" height="1024"/>
+        <image name="generator" width="1024" height="1024"/>
+        <image name="kitchen" width="1024" height="1001"/>
+        <image name="labratory" width="1024" height="1024"/>
+        <image name="library" width="1024" height="1001"/>
+        <image name="mysterious_lake" width="1024" height="1024"/>
+        <image name="secret_passage" width="1024" height="1001"/>
+        <image name="stairs_up" width="1024" height="1001"/>
+    </resources>
+</document>
