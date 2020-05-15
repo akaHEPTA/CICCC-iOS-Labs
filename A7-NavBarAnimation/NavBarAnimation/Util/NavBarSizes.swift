@@ -15,7 +15,4 @@ struct NavBarSizes {
     static let NAVIGATION_BAR_FOLD_WITHOUT_NOTCH: CGFloat = 44.0
     
     static let NAVIGATION_BAR_UNFOLD: CGFloat = 200.0
-    
-    static let BUTTON_UPPER_MARGIN_WITH_NOTCH: CGFloat = 33.0
-    static let BUTTON_UPPER_MARGIN_WITHOUT_NOTCH: CGFloat = 19.0
 }

@@ -75,7 +75,6 @@
 				9C36D97A246E4F6F00538B42 /* Util */,
 				9CD96663246D79EE002259E6 /* Supporting Files */,
 				9CD96664246D7A24002259E6 /* Model */,
-				9CD96665246D7A38002259E6 /* View */,
 				9CD96666246D7A4C002259E6 /* Controller */,
 				9CB43093246D4554009E73DB /* Info.plist */,
 			);
@@ -99,13 +98,6 @@
 				9CD96661246D7866002259E6 /* Snack.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9CD96665246D7A38002259E6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9CD96666246D7A4C002259E6 /* Controller */ = {

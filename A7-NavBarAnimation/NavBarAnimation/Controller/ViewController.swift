@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.text = "SNACKS"
+        lb.font = .systemFont(ofSize: 17, weight: .bold)
         return lb
     }()
     
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("＋", for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
-        btn.titleLabel?.textColor = .systemBlue
+        btn.titleLabel?.textColor = .blue
         btn.addTarget(self, action: #selector(plusButtonTapped(_:)), for: .touchUpInside)
         return btn
     }()
@@ -84,23 +85,20 @@ class ViewController: UIViewController {
         navBarFold.isActive = true
         
         navBarTitleLabel.centerXAnchor.constraint(equalTo: navBar.centerXAnchor).isActive = true
-        navBarTitleLabel.topAnchor.constraint(equalTo: navBar.topAnchor, constant: hasNotch ? 40 : 20).isActive = true
+        navBarTitleLabel.topAnchor.constraint(equalTo: navBar.topAnchor, constant: hasNotch ? 50 : 30).isActive = true
         
-        navBarButton.topAnchor.constraint(equalTo: navBar.topAnchor, constant: hasNotch ? NavBarSizes.BUTTON_UPPER_MARGIN_WITH_NOTCH : NavBarSizes.BUTTON_UPPER_MARGIN_WITHOUT_NOTCH).isActive = true
+        navBarButton.centerYAnchor.constraint(equalTo: navBarTitleLabel.centerYAnchor).isActive = true
         navBarButton.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -8).isActive = true
         
         imageStackView.topAnchor.constraint(equalTo: navBar.topAnchor, constant: 88).isActive = true
         imageStackView.leadingAnchor.constraint(equalTo: navBar.leadingAnchor, constant: 20).isActive = true
         imageStackView.trailingAnchor.constraint(equalTo: navBar.trailingAnchor, constant: -20).isActive = true
-        //            imageStackView.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: -20).isActive = true
-        imageStackView.heightAnchor.constraint(equalToConstant: 122).isActive = true
+        imageStackView.bottomAnchor.constraint(equalTo:navBar.bottomAnchor, constant: -20).isActive = true
         
         tableView.topAnchor.constraint(equalTo: navBar.bottomAnchor).isActive = true
-        //        tableView.heightAnchor.constraint(equalToConstant: view.frame.size.height - navBar.frame.size.height).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        //        ])
         
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Identifier.snackCell)
@@ -111,23 +109,21 @@ class ViewController: UIViewController {
         isOpened.toggle()
         
         if isOpened {
-            self.navBarTitleLabel.text = "SNACKS"
-            UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 30, animations: {
+            UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 20, animations: {
                 self.navBarFold.isActive = false
                 self.navBarUnfold.isActive = true
+                self.navBarTitleLabel.text = "Add a SNACK"
                 self.navBarButton.transform = CGAffineTransform(rotationAngle: .pi / 4)
                 self.imageStackView.isHidden = false
-                self.tableView.layoutIfNeeded()
                 self.view.layoutIfNeeded()
             })
         } else {
-            self.navBarTitleLabel.text = "Add a SNACK"
-            UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 30, animations: {
+            UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 5, initialSpringVelocity: 20, animations: {
                 self.navBarUnfold.isActive = false
                 self.navBarFold.isActive = true
+                self.navBarTitleLabel.text = "SNACKS"
                 self.navBarButton.transform = .identity
                 self.imageStackView.isHidden = true
-                self.tableView.layoutIfNeeded()
                 self.view.layoutIfNeeded()
             })
         }
@@ -172,6 +168,5 @@ extension ViewController: UITableViewDataSource {
         cell.textLabel?.text = snacks[indexPath.row].rawValue
         return cell
     }
-    
     
 }
