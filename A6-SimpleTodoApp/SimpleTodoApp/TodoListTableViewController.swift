@@ -24,6 +24,7 @@ class TodoListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Todo"
         navigationItem.leftBarButtonItem = editButtonItem
         navigationItem.rightBarButtonItems = [
