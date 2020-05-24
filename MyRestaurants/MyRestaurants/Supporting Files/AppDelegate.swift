@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MyRestaurant
+//  MyRestaurants
 //
-//  Created by Richard Cho on 2020-05-20.
+//  Created by Richard Cho on 2020-05-24.
 //  Copyright © 2020 Richard Cho. All rights reserved.
 //
 
