@@ -47,6 +47,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.font = .boldSystemFont(ofSize: 12)
+        lb.lineBreakMode = .byTruncatingTail
         return lb
     }()
     
@@ -54,6 +55,7 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
         lb.font = .systemFont(ofSize: 10)
+        lb.lineBreakMode = .byTruncatingTail
         return lb
     }()
     
@@ -85,9 +87,11 @@ class RestaurantCollectionViewCell: UICollectionViewCell {
 
         nameLabel.topAnchor.constraint(equalTo: labelStackView.topAnchor, constant: 3).isActive = true
         nameLabel.leadingAnchor.constraint(equalTo: labelStackView.leadingAnchor, constant: 10).isActive = true
-        detailLabel.bottomAnchor.constraint(equalTo: labelStackView.bottomAnchor, constant: -3).isActive = true
+        nameLabel.trailingAnchor.constraint(equalTo: labelStackView.trailingAnchor, constant: -10).isActive = true
+
         detailLabel.leadingAnchor.constraint(equalTo: labelStackView.leadingAnchor, constant: 10).isActive = true
-    
+        detailLabel.trailingAnchor.constraint(equalTo: labelStackView.trailingAnchor, constant: -10).isActive = true
+        detailLabel.bottomAnchor.constraint(equalTo: labelStackView.bottomAnchor, constant: -3).isActive = true
     }
     
     required init?(coder: NSCoder) {
