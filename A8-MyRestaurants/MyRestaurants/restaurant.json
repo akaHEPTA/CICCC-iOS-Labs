@@ -1,0 +1,113 @@
+[
+    {
+        "name": "It Char Burger",
+        "typeOfFood": .american,
+        "image": "1.jpg",
+        "mealTime": .breakfast
+    },{
+        "name": "Angelina's",
+        "typeOfFood": "American",
+        "image": "2.jpg",
+        "mealTime": "Breakfast"
+    },{
+        "name": "Chan's Garden",
+        "typeOfFood": "Chinese",
+        "image": "3.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "North Noddle House",
+        "typeOfFood": "Chinese",
+        "image": "4.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "Taverna Greka Restaurant",
+        "typeOfFood": "Greek",
+        "image": "5.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "Stefano Restaurant",
+        "typeOfFood": "Greek",
+        "image": "6.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Indian Bombay Bistro",
+        "typeOfFood": "Indian",
+        "image": "7.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Royal Tandoori Indian Restaurant",
+        "typeOfFood": "Indian",
+        "image": "8.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Artusi Restaurant",
+        "typeOfFood": "Italian",
+        "image": "9.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Piva Modern Italian",
+        "typeOfFood": "Italian",
+        "image": "10.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "Sushi Modo",
+        "typeOfFood": "Japanese",
+        "image": "11.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "Victoria Sushi",
+        "typeOfFood": "Japanese",
+        "image": "12.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Na-Re Korean Kitchen",
+        "typeOfFood": "Korean",
+        "image": "13.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Misita Korean Cuisine",
+        "typeOfFood": "Korean",
+        "image": "14.jpg",
+        "mealTime": "Lunch
+    },{
+        "name": "Taqueria Playa Tropical",
+        "typeOfFood": "Mexican",
+        "image": "15.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "El Santo",
+        "typeOfFood": "Mexican",
+        "image": "16.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Wild Thyme",
+        "typeOfFood": "Middle Eastern",
+        "image": "17.jpg",
+        "mealTime": "Dinner"
+    },{
+        "name": "Zaaki Cuisine",
+        "typeOfFood": "Middle Eastern",
+        "image": "18.jpg",
+        "mealTime": "Breakfast"
+    },{
+        "name": "The One Restaurant",
+        "typeOfFood": "Taiwanese",
+        "image": "19.jpg",
+        "mealTime": "Breakfast"
+    },{
+        "name": "Old Street",
+        "typeOfFood": "Taiwanese",
+        "image": "20.jpg",
+        "mealTime": "Lunch"
+    },{
+        "name": "Co Chau",
+        "typeOfFood": "Vietnamese",
+        "image": "21.jpg",
+        "mealTime": "Breakfast"
+    },{
+        "name": "Banh Mi Bar Restaurant",
+        "typeOfFood": "Vietnamese",
+        "image": "22.jpg",
+        "mealTime": "Lunch22"
+    }
+]
